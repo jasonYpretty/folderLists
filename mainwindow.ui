@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>472</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FolderLists</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/new/icon/src/folder icon.png</normalon>
+   </iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton_creatL">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>70</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 170, 127);
+font: 26 12pt &quot;Microsoft YaHei&quot;;
+color: rgb(0, 135, 0);</string>
+    </property>
+    <property name="text">
+     <string>生成 文件Log</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_readL">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>170</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 26 12pt &quot;Microsoft YaHei&quot;;</string>
+    </property>
+    <property name="text">
+     <string>读取 Log</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>190</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>more+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_exit">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>250</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 0, 0);
+font: 9pt &quot;Microsoft YaHei&quot;;</string>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>472</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufolderLists">
+    <property name="title">
+     <string>folderLists</string>
+    </property>
+    <addaction name="actionabout"/>
+    <addaction name="action_help"/>
+    <addaction name="action_calendar"/>
+   </widget>
+   <addaction name="menufolderLists"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionabout">
+   <property name="text">
+    <string>关于(about)</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="text">
+    <string>帮助(help)</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="action_calendar">
+   <property name="text">
+    <string>日历(calendar)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
